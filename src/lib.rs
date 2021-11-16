@@ -27,7 +27,6 @@ unsafe impl GlobalAlloc for BadAlloc {
     }
 
     unsafe fn dealloc(&self, ptr: *mut u8, _layout: Layout) {
-        // TODO: actually free the right memory and not just the first 8 bits.
-        free(ptr.cast())
+        free(ptr.cast());
     }
 }

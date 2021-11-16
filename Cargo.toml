@@ -1,14 +1,12 @@
 [package]
-edition = "2018"
+edition = "2021"
 name = "badalloc"
 version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [workspace]
-members = [
-  "test",
-]
+members = ["test"]
 
 [dependencies]
 libc = "0.2"
